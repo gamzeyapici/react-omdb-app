@@ -1,0 +1,65 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+#search-container {
+  margin-top: 20px;
+
+  #search-input-container {
+    position: relative;
+
+    img {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 15px;
+      top: 7px;
+      z-index: 4;
+    }
+
+    input {
+      border-radius: 5px 5px 0 0;
+    }
+
+    input:focus {
+      box-shadow: none;
+      border: none;
+      border-bottom: 1px solid blue;
+    }
+  }
+
+  #search-result-container {
+    display: none;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    width: calc(100% - 50px);
+    background: white;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+
+  .search-list-item {
+    padding: 20px 0;
+    border-bottom: 1px solid lightgray;
+  }
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 32px solid transparent;
+  border-right: 32px solid transparent;
+  border-bottom: 32px solid darkgray;
+  margin: 0 auto;
+}
+
+#scrollup {
+  display: none;
+  background-color: #eee;
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  padding: 20px;
+  border-radius: 10px;
+}
